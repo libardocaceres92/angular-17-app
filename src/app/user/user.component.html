@@ -9,4 +9,8 @@
         <button (click)="isLoggedIn=true">Log In</button>
     }
 
+    @if (favGame != '') {
+        <p>Tu juego favorito es {{favGame}}</p>
+    }
+
 </section>
