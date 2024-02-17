@@ -1,0 +1,10 @@
+<h1>Los juegos favotitos de {{username}}</h1>
+
+<ul>
+    @for (game of games; track game.id) {
+        <li (click)="fav(game.name)">ID: {{game.id}}</li>
+        Nombre: {{game.name}}
+        <p></p>
+    }
+</ul>
+

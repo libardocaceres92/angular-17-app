@@ -1,0 +1,12 @@
+<section>
+    @if (isLoggedIn) {
+        <p>Bienvenido, {{username}}</p>
+        <img (click)="greet()" src="https://github.com/libardocaceres92.png" alt="photo">
+        <app-games (addFavoriteEvent)="getFavorite($event)" username="{{username}}"></app-games>
+    } @else {
+        <p>Bienvenido a la app de Angular 17</p>
+        <p>Debe iniciar sesion!</p>
+        <button (click)="isLoggedIn=true">Log In</button>
+    }
+
+</section>
